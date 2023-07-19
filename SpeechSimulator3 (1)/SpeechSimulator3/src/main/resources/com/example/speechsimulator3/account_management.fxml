@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #102020;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.speechsimulator3.AccountManagement">
+    <children>
+        <AnchorPane prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #074D4D;">
+            <children>
+                <Button fx:id="profileB" layoutX="7.0" layoutY="13.0" onAction="#handleToProfile" style="-fx-background-color: efdfdf;" text="Профиль" />
+              <Label layoutX="274.0" layoutY="7.0" text="TalkMentor">
+                  <font>
+                      <Font name="Bell MT" size="30.0" />
+                  </font>
+                  <textFill>
+                      <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                          <stops>
+                              <Stop>
+                                  <color>
+                                      <Color red="0.6235294342041016" green="0.9333333373069763" />
+                                  </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                  <color>
+                                      <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                  </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                  <color>
+                                      <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                  </color>
+                              </Stop>
+                          </stops>
+                      </RadialGradient>
+                  </textFill>
+              </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="changePassB" layoutX="260.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="Смена пароля">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="quitB" layoutX="260.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="Выход из аккаунта">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="delAccB" layoutX="260.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #c45454; -fx-background-radius: 10;" text="удалить аккаунт">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

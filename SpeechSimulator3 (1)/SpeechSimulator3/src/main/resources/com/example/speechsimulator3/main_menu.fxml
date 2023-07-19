@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.speechsimulator3.MainMenu">
+    <AnchorPane prefHeight="50" prefWidth="700" style="-fx-background-color: #074D4D;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <Label layoutX="274.0" layoutY="8.0" text="TalkMentor">
+                <font>
+                    <Font name="Bell MT" size="30.0" />
+                </font>
+                <textFill>
+                    <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </RadialGradient>
+                </textFill>
+            </Label>
+            <Button layoutX="620.0" layoutY="13.0" mnemonicParsing="false" onAction="#toProfile" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="Профиль" />
+        </children>
+    </AnchorPane>
+    <ScrollPane fx:id="scrollPane" maxWidth="700.0" prefHeight="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <content>
+            <VBox fx:id="contentBox" spacing="10.0" style="-fx-padding: 0 0 0; -fx-background-color: efdfdf;">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="270.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="artikLabel" layoutX="20.0" layoutY="14.0" text="Артикуляционная зарядка">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="280.0" fitWidth="265.0" layoutX="15.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/second_im.png" />
+                                    </image></ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel1" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Данное упражнение направлено на развитие артикуляции, укрепление мышечных тканей речевого аппарата, четкого произношения самых сложных слов и словосочетаний. Артикуляционную зарядку рекомендуется делать 1-2 раза в день." textAlignment="CENTER">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <wrapText>true</wrapText>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="artikB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activityArtik" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="280.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="vzrivLabel" layoutX="20.0" layoutY="14.0" maxWidth="240.0" text="Произношение взрывных звуков" textAlignment="JUSTIFY" wrapText="true">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="260.0" fitWidth="265.0" layoutX="5.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/first_im.png" />
+                                    </image></ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel2" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Во время выполнения этого упражнения проводится отработка более качественного звучания согласных и гласных звуков, за счет которых обеспечивается различительная и смысловая функция отдельных слов.Во время выполнения этого упражнения проводится отработка более качественного звучания согласных и гласных звуков, за счет которых обеспечивается различительная и смысловая функция отдельных слов." textAlignment="CENTER">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <wrapText>true</wrapText>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="vzrivB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activityVzriv" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="270.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="breathLabel" layoutX="40.0" layoutY="14.0" text="Правильное дыхание">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="260.0" fitWidth="265.0" layoutX="15.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/fifth_im.png" />
+                                    </image></ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel3" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Постановка дыхания — это важный этап в общем процессе развития дикции и улучшения звучания голоса. Выполнение данного упражнения, направленного на усовершенствование функций речевого аппарата." textAlignment="CENTER">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <wrapText>true</wrapText>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="breathB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activityBreath" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="280.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="TTLabel" layoutX="15.0" layoutY="10.0" text="Произношение скороговорок" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="280.0" fitWidth="265.0" layoutX="5.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/sixth_im.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel11" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Дикция (упражнения для улучшения дикции должны выполняться регулярно) вырабатывается только при условии постоянной работы над четкостью своей речи. Произношение скороговорок — это классический и один из наиболее эффективных способов постановки хорошей интонации, звонкого звучания голоса и членораздельного произношения каждого слова. Данное упражнение можно выполнять неограниченное количество раз на протяжении всего дня." textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="TTB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activityTT" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="280.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="hardWordsLabel" layoutX="30.0" layoutY="10.0" text="Повторение сложных слов" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="280.0" fitWidth="265.0" layoutX="15.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/fourth_im.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel111" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Дикция (упражнения для улучшения дикции подходят людям всех возрастных групп) формируется постепенно, по мере укрепления мускулатуры речевого аппарата. Занятие под названием «Повторение сложных слов» предусматривает методичное проговаривание сложных слов." textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="hardWordsB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activityHardWords" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" maxWidth="280.0" prefHeight="330.0" prefWidth="260.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="speedLabel" layoutX="40.0" layoutY="10.0" maxWidth="200.0" text="Произношение фраз в разном темпе" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="250.0" fitWidth="245.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/seventh_im.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel1111" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Дикция (упражнения для улучшения дикции способствуют развитию всего речевого аппарата) играет важную роль в ежедневном общении. Для выполнения этого упражнения необходимо проговаривать набор фраз с большим количеством сложных сочетаний гласных и согласных звуков. При этом нижеперечисленные слова сначала воспроизводятся шепотом." textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="speedB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activitySpeed" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="685.0" style="-fx-background-color: efdfdf;">
+                    <children>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" maxWidth="280.0" prefHeight="330.0" prefWidth="280.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="fearLabel" layoutX="40.0" layoutY="10.0" maxWidth="200.0" text="Страх перед выступлением" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <ImageView fitHeight="250.0" fitWidth="245.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../../Desktop/third_im.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="300.0" layoutY="10.0" prefHeight="330.0" prefWidth="375.0" style="-fx-background-color: #102020;">
+                            <children>
+                                <Label fx:id="textLabel11111" layoutX="10.0" layoutY="14.0" prefWidth="350.0" text="Почти все нервничают перед выходом на сцену или к большой аудитории - это нормально. Особенно если вы не выступаете регулярно. В данном упражнении будут описаны советы и упражнения для подготовки к выступлению" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <textFill>
+                                        <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                                            <stops>
+                                                <Stop>
+                                                    <color>
+                                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                                    </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                    <color>
+                                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                                    </color>
+                                                </Stop>
+                                            </stops>
+                                        </RadialGradient>
+                                    </textFill>
+                                </Label>
+                                <Button fx:id="fearB" layoutX="70.0" layoutY="270.0" mnemonicParsing="false" onAction="#activityFear" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="перейти к упражнению">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </VBox>
+        </content>
+    </ScrollPane>
+</AnchorPane>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #074D4D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.speechsimulator3.MWcontroller">
+    <children>
+        <AnchorPane layoutY="50.0" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #102020;">
+            <children>
+                <TextField fx:id="loginField" layoutX="198.0" layoutY="23.0" prefHeight="25.0" prefWidth="305.0" promptText="Почта" style="-fx-background-color: efdfdf; -fx-border-color: #015367; -fx-background-radius: 10; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Bell MT" size="15.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordField" layoutX="198.0" layoutY="61.0" prefHeight="25.0" prefWidth="305.0" promptText="Пароль" style="-fx-background-color: efdfdf; -fx-border-color: #015367; -fx-background-radius: 10; -fx-border-radius: 10;">
+                    <font>
+                        <Font name="Bell MT" size="15.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="EnterB" layoutX="288.0" layoutY="130.0" mnemonicParsing="false" onAction="#gotoMain" style="-fx-background-color: #074D4D; -fx-border-color: #015367; -fx-background-radius: 10; -fx-border-radius: 10;" text="Войти">
+                    <font>
+                        <Font name="Bell MT" size="30.0" />
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="1.0" cycleMethod="REFLECT" radius="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Button>
+                <Hyperlink layoutX="21.0" layoutY="28.0" text="войти через соц сеть" visible="false">
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="1.0" cycleMethod="REFLECT" radius="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.006711409395973154">
+                                    <color>
+                                        <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                                    </color>
+                                </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                           </color>
+                        </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+                </Hyperlink>
+            <Hyperlink fx:id="codeReb" layoutX="198.0" layoutY="98.0" onAction="#gotoRebut" text="забыли пароль?">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="1.0" cycleMethod="REFLECT" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Hyperlink>
+            </children>
+        </AnchorPane>
+        <Label layoutX="274.0" layoutY="7.0" text="TalkMentor">
+            <font>
+                <Font name="Bell MT" size="30.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+      <Button fx:id="registerB" layoutX="601.0" layoutY="12.0" mnemonicParsing="false" onAction="#gotoRegister" style="-fx-background-color: efdfdf; -fx-background-radius: 10;" text="Регистрация">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+    </children>
+</AnchorPane>

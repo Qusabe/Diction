@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #102020;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.speechsimulator3.Activity">
+    <children>
+        <AnchorPane prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #074D4D;" />
+        <Label layoutX="247.0" layoutY="7.0" text="SpeechSimulator">
+            <font>
+                <Font name="Bell MT" size="30.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="1.0" radius="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.6235294342041016" green="0.9333333373069763" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                            <color>
+                                <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="179.0" layoutY="50.0" text="Описание тренировочного процесса">
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="1.0" radius="0.5">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                            <color>
+                                <Color red="0.6431372761726379" green="0.43529412150382996" blue="0.7607843279838562" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.9372549057006836" green="0.8745098114013672" blue="0.8745098114013672" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Accordion layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #102020;">
+            <panes>
+                <TitledPane animated="false" prefWidth="645.0" style="-fx-background-color: #102020;" text="Шаг 1. Укрепление мышц корня языка." >
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Необходимо открыть рот, а затем высунуть язык вперед на максимальную длину. После этого язык засовывается внутрь ротовой полости по направлению к тканям твердого неба. Данные действия выполняются в течение 5-7 мин." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" style="-fx-background-color: #102020;" text="Шаг 2. Быстрое перемещение языка внутри ротовой полости.">
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Следует закрыть ротовую полость, а затем кончиком языка поочередно касаться внутренней поверхности правой и левой щеки. Продолжительность тренировки этого вида составляет 6 мин." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Шаг 3. Вращающие движения языком." style="-fx-background-color: #102020;">
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Необходимо закрыть рот, а затем выполнять вращательные движения языком внутри ротовой полости. В правую и левую сторону следует сделать не менее 20 вращений." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Шаг 4. Тренировка лицевой мускулатуры нижней части лица." style="-fx-background-color: #102020;">
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Для проведения данной тренировки необходимо вытянуть губы трубочкой. После этого мышечные ткани нижней части лица растягиваются в максимально широкой улыбке, которая сохраняется в течение 10 с. Затем все движения выполняются заново. Продолжительность данного этапа артикуляционной тренировки составляет 10 мин." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Шаг 5. Вращение языка с открытым ртом." style="-fx-background-color: #102020;">
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Необходимо открыть рот и высунуть язык, а затем вращать его кончиком по часовой и против часовой стрелки. В каждую сторону следует выполнять по 25 повторений." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Шаг 6. Растягивание щек." style="-fx-background-color: #102020;">
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Для проведения этого этапа артикуляционной тренировки потребуется закрыть рот, а затем наполнить его большим количество воздуха. После этого данный объем воздуха поочередно перемещается от правой к левой щеке. Ориентировочная продолжительность тренировки 5 мин." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Шаг 7. Комплексное укрепление всех лицевых мышц." style="-fx-background-color: #102020;">
+                    <content>
+                        <VBox style="-fx-background-color: #102020;">
+                            <Label text="Этот этап занятия на развитие артикуляции предусматривает выполнение следующих действий: 1. Изображение различных гримас. 2. Выпучивание глаз. 3. Пародирование различных персонажей. 4. Надувание щек. 5. Демонстрация разнообразных эмоций.  Данный этап артикуляционной тренировки проходит в произвольной форме. Главное условие — это создание максимальной нагрузки на все лицевые мышцы, участвующие во время воспроизведения речи." textFill="WHITE" wrapText="true" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </children>
+</AnchorPane>
